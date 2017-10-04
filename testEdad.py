@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 
-from edad import Edad
+from Edad import Edad
 
 class testEdad(unittest.TestCase):
 	"""docstring for Edad Test"""
