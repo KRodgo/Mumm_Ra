@@ -1,23 +1,21 @@
 # -*- coding: utf-8 -*-
-#ITS LIT
-class Concurrencias():
+class Edad():
 
-    def obtener_diccionario(self,texto):
-    #split each sentences at '.'
-    lista = texto.lower().split('.')
-    #declare empty dictionary for the counter
-    diccionario = {}
-    listaAux = []
+	def calcular_edad(self,edad):
+		if  type(edad) is not str:
+			if edad<=0:
+				return 'No existes'
+			if edad<=12:
+				return 'Eres niño'
+			if edad<=17:
+				return 'Eres adolescente'
+			if edad<=64:
+				return 'Eres adulto'
+			if edad<=120:
+				return 'Eres adulto mayor'
+			else:
+				return 'Eres Mumm-Ra'
 
-    for sentence in lista:
-        words = sentence.split()
-        for word in words:
-            index = words.index(word)
-            listaAux.append(index)
-            if word not in diccionario:
-                diccionario[word] = list()
-                diccionario[word].append(index)
-            else:
-                diccionario[word]= list()
-                diccionario[word].append(index)
-    return diccionario
+		else:
+			return 'Datos incorrectos'
+
