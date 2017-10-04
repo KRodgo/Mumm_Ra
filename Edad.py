@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#ITS LIT
 class Concurrencias():
 
 	def obtener_diccionario(self,texto):
